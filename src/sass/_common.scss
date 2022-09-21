@@ -1,1 +1,48 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Titan One', cursive;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+:root {
+    --height-nav: 70px;
+    --color-hero:#D41443;
+    --color-subtitle: #FFA5BA;
+    --text-gray: #907E82;
+    --text-white: #fff;
+    
+}
+
+html {
+    font-size: 62.5%;
+}
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+
+
