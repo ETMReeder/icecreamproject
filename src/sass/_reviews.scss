@@ -1,0 +1,74 @@
+$containerBackground: rgba(250, 250, 250, 1);
+$underlineColor: rgba(225, 225, 225, 1);
+
+
+
+
+body {
+    font-family: "DM Sans";
+    font-weight: 500; 
+
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .reviews__slider-container {
+      
+       
+    
+    }
+
+    .reviews__slider-list {
+        
+        
+    }
+
+    .reviews__slider-item {
+       
+       
+    
+    
+    }
+
+    .reviews__slider-image {
+        
+        
+    }
+
+
+        .reviews__testimonial-container {
+            background-color: $containerBackground;
+            width: 968px;
+            height: 138px;
+            margin-top: 16px;
+            position: relative;
+
+            .reviews__testimonial-description {
+                text-align: center;
+                bottom: 39px;
+                top: 47px;
+                left: 109px;
+                right: 109px;
+                line-height: 29.76px;
+                position: absolute;
+
+            }
+
+        }
+
+    .reviews__name-container {
+        margin-top: 36px;
+
+        .reviews__name-details {
+            font-size: 20px;
+        }
+    }
+
+    .icon {
+        margin-top: 33px;
+    }
+
+}
