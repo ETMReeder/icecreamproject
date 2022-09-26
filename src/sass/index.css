@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import '~node_modules/modern-normalize/modern-normalize.css';
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap");
 *,
@@ -140,8 +141,10 @@ body .reviews {
   align-items: center;
 }
 body .reviews__home-slider {
-  display: flex;
   width: 100%;
+}
+body .reviews__home-slider .slider {
+  overflow: initial;
 }
 body .reviews__home-slider .reviews__slide {
   display: flex;
@@ -172,6 +175,15 @@ body .reviews__testimonial-container .reviews__testimonial-description {
   line-height: 29.76px;
   position: absolute;
 }
+body .reviews__testimonial-container .reviews__testimonial-description::before {
+  content: "❞";
+  left: -18px;
+  width: 54px;
+  height: 40px;
+  position: absolute;
+  color: rgb(225, 225, 225);
+  font-size: 100px;
+}
 body .reviews__name-container {
   margin-top: 36px;
 }
@@ -180,4 +192,38 @@ body .reviews__name-container .reviews__name-details {
 }
 body .icon {
   margin-top: 33px;
+}
+body .slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+body .slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: rgb(199, 19, 62);
+  border: 0;
+  outline: none;
+  background: none;
+}
+body .slick-dots li button:before {
+  content: "•";
+  font-size: 22px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: rgb(199, 19, 62);
 }/*# sourceMappingURL=index.css.map */

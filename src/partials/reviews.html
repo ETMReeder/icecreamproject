@@ -70,13 +70,18 @@
     <script type="text/javascript">
 
         $(document).ready(function(){
+            $('.slick-next').hide();
+             $('.slick-prev').hide();
          $('.reviews__home-slider').slick({
             arrow: true,
             autoplay: true,
             autoplaySpeed: 2000,
             slidesToShow: 1,
             slidesToScroll: 1,
-            dots: false,
+            infinite: true,
+            dots: true,
+            dotsClass: 'slick-dots',
+            adaptiveHeight: true,
             variableWidth: true,
             centerMode: true,
             centerPadding: '0',
@@ -109,6 +114,9 @@
                 // instead of a settings object
                 ]
              });
+             $('.slick-next').hide();
+             $('.slick-prev').hide();
+        
         });
         
     </script>
