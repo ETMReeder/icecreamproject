@@ -8,35 +8,41 @@ body {
     font-family: "DM Sans";
     font-weight: 500; 
 
-    .reviews {
+    .reviews{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         text-align: center;
+        align-content: center;
+        align-items: center;
+    
+    }
+
+    .reviews__home-slider {
+        display: flex;
+        width: 100%;   
+    
+    }
+
+
+    .reviews__home-slider .reviews__slide {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        max-width: 1280px;
+        align-items: center;
         justify-content: center;
     }
 
-    .reviews__slider-container {
-      
-       
-    
+    .reviews__home-slider .reviews__slide img {
+        width: 85px;
+        height: 85px;
+        transition: all linear .4s;
+
+     
     }
 
-    .reviews__slider-list {
-        
-        
-    }
 
-    .reviews__slider-item {
-       
-       
-    
-    
-    }
-
-    .reviews__slider-image {
-        
-        
-    }
 
 
         .reviews__testimonial-container {
