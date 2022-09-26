@@ -1,3 +1,86 @@
+
+
+
+// how its made //
+.pink{
+    color: var(--color-subtitle);
+}
+.red{
+    color: var(--color-hero);
+}
+
+.title__section__how {
+
+    h3 {
+        font-family: 'Titan One', cursive;
+        color: var(--color-subtitle);
+        font-size: 30px;
+        line-height: 34px;
+        line-height: 100%;
+        align-items: Center Vertical;
+        align-self: Top;
+        letter-spacing: 6%;
+    }
+    h2 {
+        font-family: Titan One, cursive;
+        color: var(--color-hero);
+        font-size: 58px;
+        font-weight: 400;
+        line-height: 66px;
+        line-height: 100%; 
+        letter-spacing: 0.06em;
+        text-align: center;
+    }
+ }
+.cowsmilk {
+    background-image: url(../images/how/milkmilk.png);
+    display: flex;
+    justify-content: space-around;
+}
+
+.cowcow:hover {
+      transform: rotateY(180deg);  
+}
+.how__left {
+        width: 501px;
+}
+.how__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 683px;
+
+    p {
+        font-family: DM Sans;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0.04em;
+        text-align: left;
+        width: 463px;
+    }
+
+    button {
+        font-family: DM Sans;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: var(--color-hero);
+        border: none;
+    }
+}
+
+.how__right__text1 {
+    font-size: 2rem;
+    color: #000;
+}
+
+.how__right__text2 {
+    font-size: 1.5rem;
+    color: var(--text-gray);
+}
+    
 // gallery//
 .section__gallery {
     display: grid;
@@ -10,7 +93,7 @@
 }
 /* Grid images --------------------------------------------*/
 
-.img {
+.gallery__img {
     border-radius: 1rem;
     height: 100%;
     width: 100%;
@@ -62,3 +145,8 @@
 .item-14 {
     grid-row: 11/13;
 }
+
+
+
+
+
