@@ -213,7 +213,7 @@ body .slick-dots li button {
   color: rgb(199, 19, 62);
   border: 0;
   outline: none;
-  background: none;
+  background: transparent;
 }
 body .slick-dots li button:before {
   content: "•";
