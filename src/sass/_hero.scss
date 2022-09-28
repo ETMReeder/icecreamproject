@@ -4,18 +4,22 @@ ul {
     padding: 0;
     overflow: hidden;
 }
+
 .active-link {
     color: #FFFFFF;
     text-decoration: none;
 }
+
 .active-link:hover {
     color: #D41443;
 }
+$color-background: #FFB8CA;
 body {
     margin: 0;
     height: 100%;
     background-color: #FFB8CA;
 }
+
 .ice-cream-logo {
     position: absolute;
     left: 1.33%;
@@ -24,11 +28,13 @@ body {
     bottom: 97.18%;
     margin-top: 24px;
 }
+
 .nav-menu {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 .nav-home {
     position: absolute;
     width: 46px;
@@ -41,6 +47,7 @@ body {
     font-size: 16px;
     line-height: 21px;
 }
+
 .nav-about-us {
     position: absolute;
     width: 70px;
@@ -53,6 +60,7 @@ body {
     font-size: 16px;
     line-height: 21px;
 }
+
 .nav-how-its-made {
     position: absolute;
     width: 117px;
@@ -65,6 +73,7 @@ body {
     font-size: 16px;
     line-height: 21px;
 }
+
 .nav-our-products {
     position: absolute;
     width: 104px;
@@ -78,6 +87,7 @@ body {
     line-height: 21px;
     z-index: 2;
 }
+
 .nav-contact {
     position: absolute;
     width: 64px;
@@ -91,6 +101,7 @@ body {
     line-height: 21px;
     z-index: 2;
 }
+
 .button-buy-now {
     position: absolute;
     width: 159px;
@@ -105,7 +116,9 @@ body {
     color: #D41443;
     background: #FFFFFF;
     border-radius: 22px;
+    border: #D41443;
 }
+
 .ice-cream-text {
     position: absolute;
     width: 277px;
@@ -121,6 +134,7 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
 }
+
 .products-button {
     position: absolute;
     width: 107px;
@@ -136,7 +150,9 @@ body {
     font-size: 14px;
     text-align: center;
     color: #FFFFFF;
+    border: #D41443;
 }
+
 .how-its-made-button {
     position: absolute;
     width: 138px;
@@ -152,7 +168,9 @@ body {
     font-size: 14px;
     text-align: center;
     color: #D41443;
+    border: #D41443;
 }
+
 .milk-pitcher {
     position: absolute;
     width: 213px;
@@ -161,6 +179,7 @@ body {
     top: 388px;
     background: url(slider-pic5.png);
 }
+
 .paragraph-text {
     position: absolute;
     width: 200px;
@@ -175,6 +194,7 @@ body {
     /* or 20px */
     color: #FFFFFF;
 }
+
 .right-arrow {
     position: absolute;
     width: 26px;
@@ -183,6 +203,7 @@ body {
     top: 554px;
     background: url(arrow-right.png);
 }
+
 .ice-cream-image {
     position: absolute;
     width: 236px;
@@ -191,6 +212,7 @@ body {
     top: 108px;
     background: url(slider-pic7.png);
 }
+
 .ellipse-background {
     background-image: url("/images/Ellipse\ 3.png");
     background-size: cover;
@@ -200,6 +222,7 @@ body {
     left: 517px;
     top: 54px;
 }
+
 .girl-eating-icecream {
     position: absolute;
     width: 304px;
@@ -208,11 +231,13 @@ body {
     top: 423px;
     background: url(slider-pic4.png);
 }
+
 .container-1 {
     width: 72px;
     height: 77px;
     margin-right: 1152px;
 }
+
 .sixteen {
     position: absolute;
     width: 54px;
@@ -230,6 +255,7 @@ body {
     color: #D41443;
     z-index: 3;
 }
+
 .cafes-text {
     position: absolute;
     width: 35px;
@@ -245,11 +271,13 @@ body {
     text-align: right;
     color: #FFFFFF;
 }
+
 .container-2 {
     width: 92px;
     height: 76px;
     margin-right: 1132px;
 }
+
 .twenty-three {
     position: absolute;
     width: 59px;
@@ -267,6 +295,7 @@ body {
     color: #D41443;
     z-index: 3;
 }
+
 .foodtrucks-text {
     position: absolute;
     width: 74px;
@@ -282,6 +311,7 @@ body {
     text-align: right;
     color: #FFFFFF;
 }
+
 .small-ellipse-1 {
     position: absolute;
     width: 30px;
@@ -290,6 +320,7 @@ body {
     top: 192px;
     z-index: 1;
 }
+
 .small-ellipse-2 {
     position: absolute;
     width: 30px;
