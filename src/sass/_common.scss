@@ -29,8 +29,8 @@ body{
     --color-hero:#D41443;
     --color-subtitle: #FFA5BA;
     --text-gray: #907E82;
-    --text-white: #fff;
-    
+    --text-white: #fff;   
+
 }
 
 html {
@@ -46,3 +46,30 @@ html {
 
 
 
+// keep at end  
+/*-----responsive-------*/
+@media screen and (max-width:768px) {
+    body {
+        background: violet;
+    }
+
+    .container {
+        max-width: 748px;
+
+    }
+
+    
+    .gallery__grid__row {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:480px) {
+    body {
+        background: yellow;
+    }
+
+    .container {
+        max-width: 460px;
+    }
+}
