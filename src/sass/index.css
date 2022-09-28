@@ -174,11 +174,14 @@ body .reviews__testimonial-container .reviews__testimonial-description {
   right: 109px;
   line-height: 29.76px;
   position: absolute;
+  text-decoration: underline;
+  color: 0;
 }
 body .reviews__testimonial-container .reviews__testimonial-description::before {
   content: "❞";
-  left: -18px;
+  left: -29px;
   width: 54px;
+  bottom: -6px;
   height: 40px;
   position: absolute;
   color: rgb(225, 225, 225);
