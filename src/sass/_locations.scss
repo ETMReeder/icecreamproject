@@ -1,0 +1,387 @@
+.section__contacts {
+  padding-top: 0;
+  background-color: #fff5f6;
+}
+
+.contacts__container {
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts__list:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 30px rgba(212, 20, 67, 0.1);
+}
+
+.contacts__list:nth-child(1) {
+  transition-duration: 500ms;
+}
+
+.contacts__list:nth-child(2) {
+  transition-duration: 500ms;
+}
+
+.contacts__list:nth-child(3) {
+  transition-duration: 500ms;
+}
+
+.contacts__list {
+  background: #ffffff;
+
+  border-radius: 24px;
+  margin-bottom: 35px;
+}
+
+.contacts__item {
+  padding-top: 40px;
+  padding-left: 32px;
+  width: 100%;
+  padding-bottom: 40px;
+  padding-right: 69px;
+}
+
+.contacts {
+  margin-bottom: 20px;
+  background-color: #f0d1a5;
+  width: 80px;
+  max-width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.contacts__list-item {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.contacts__list-table {
+  margin-top: 24px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.contacts__list-phone {
+  margin-top: 24px;
+}
+
+.contacts__link {
+  text-decoration: none;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #907e82;
+}
+
+.contacts__title {
+  color: white;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+}
+
+.contacts__list-title {
+  margin-bottom: 8px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+}
+
+.contacts__list-days {
+  margin: 0;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+}
+
+.contacts__list-hours {
+  color: #ffa5ba;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  margin-bottom: 8px;
+}
+
+.contacts__list-hour {
+  color: #ffa5ba;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  margin-bottom: 24px;
+}
+
+.contacts__list-text {
+  margin-bottom: 24px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #907e82;
+}
+
+.contacts__button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.contacts__button-location {
+  width: 161.45px;
+  height: 44px;
+  background: #d41342;
+  border-radius: 22px;
+  color: white;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  border: none;
+  cursor: pointer;
+}
+
+.contacts__button-location:hover {
+  animation-name: changeBgColor;
+  animation-duration: 3000ms;
+}
+
+@keyframes changeBgColor {
+  0% {
+    background-color: orange;
+  }
+
+  50% {
+    background-color: rgb(255, 102, 0);
+  }
+
+  100% {
+    background-color: rgb(255, 64, 0);
+  }
+}
+
+.contacts__button-franchise {
+  width: 161px;
+  height: 44px;
+  background: white;
+  border-radius: 22px;
+  color: #d41443;
+  border: none;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+.contacts__button-franchise:hover {
+  animation-name: changeBgColor;
+  animation-duration: 3000ms;
+}
+
+@keyframes changeBgColor {
+  0% {
+    background-color: orange;
+    color: white;
+  }
+
+  50% {
+    background-color: rgb(255, 102, 0);
+    color: white;
+  }
+
+  100% {
+    background-color: rgb(255, 64, 0);
+    color: white;
+  }
+}
+
+.contacts__icon-franchise {
+  fill: #d41443;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__section {
+    padding: 0 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__container {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__title {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__title {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__list-title {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__list-title {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__list-text {
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__list-table {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__list-text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__list-days {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__list-days {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__list-hours {
+    font-size: 14px;
+    width: 159px;
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__list-hour {
+    font-size: 14px;
+    width: 159px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__list-phone {
+    margin-top: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__list-hours {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__link {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__list {
+    max-width: 100%;
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__list:nth-child(3) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__item {
+    width: 224px;
+    height: 528px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__item {
+    width: 368px;
+    height: 538px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__button {
+    margin-top: 60px;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__button-location {
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+}
