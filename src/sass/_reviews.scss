@@ -14,7 +14,7 @@ body {
         line-height: 1.5em;
     }
 
-    .reviews{
+    .reviews {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -174,4 +174,6 @@ body {
         .reviews__testimonial-description {
             overflow: hidden;
             text-align: left;
+        }
+    }
 }

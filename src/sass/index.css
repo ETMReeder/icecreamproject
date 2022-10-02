@@ -239,7 +239,8 @@ body .slick-dots li button::after {
   body .reviews__home-slider {
     width: 80%;
   }
-  body .reviews__testimonial-container {
-    flex-wrap: wrap;
+  body .reviews__testimonial-description {
+    overflow: hidden;
+    text-align: left;
   }
 }/*# sourceMappingURL=index.css.map */
