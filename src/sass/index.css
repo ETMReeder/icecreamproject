@@ -667,6 +667,10 @@ body {
   font-family: "DM Sans";
   font-weight: 500;
 }
+body p {
+  margin: 0 auto;
+  line-height: 1.5em;
+}
 body .reviews {
   display: flex;
   flex-direction: column;
@@ -702,6 +706,7 @@ body .reviews__testimonial-container {
   position: relative;
 }
 body .reviews__testimonial-container .reviews__testimonial-description {
+  margin: 0;
   text-align: center;
   bottom: 39px;
   top: 47px;
@@ -709,11 +714,15 @@ body .reviews__testimonial-container .reviews__testimonial-description {
   right: 109px;
   line-height: 29.76px;
   position: absolute;
+  -webkit-text-decoration: underline rgb(225, 225, 225);
+          text-decoration: underline rgb(225, 225, 225);
+  text-underline-offset: 8px;
 }
 body .reviews__testimonial-container .reviews__testimonial-description::before {
   content: "❞";
-  left: -18px;
+  left: -29px;
   width: 54px;
+  bottom: -6px;
   height: 40px;
   position: absolute;
   color: rgb(225, 225, 225);
@@ -726,39 +735,47 @@ body .reviews__name-container .reviews__name-details {
   font-size: 20px;
   position: relative;
 }
-body .icon {
-  margin-top: 32px;
+body .reviews__icon {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 body .slick-dots li {
   position: relative;
   display: inline-block;
   width: 20px;
   height: 20px;
-  margin: 0 5px;
-  padding: 0;
   cursor: pointer;
 }
 body .slick-dots li button {
   font-size: 0;
-  line-height: 0;
-  width: 20px;
-  height: 20px;
-  padding: 5px;
   cursor: pointer;
   border: 0;
   outline: none;
   background: transparent;
 }
-body .slick-dots li button:before {
+body .slick-dots li button::after {
   content: "";
-  font-size: 22px;
   line-height: 20px;
   position: absolute;
-  top: 32px;
-  left: 0;
   width: 12px;
   height: 12px;
-  text-align: center;
   border-radius: 100%;
   background-color: #D9D9D9;
+}
+
+@media screen and (max-width: 768px) {
+  body .reviews {
+    max-width: 748px;
+    display: flex;
+    flex-direction: row;
+  }
+  body .reviews__home-slider {
+    width: 80%;
+  }
+  body .reviews__testimonial-description {
+    overflow: hidden;
+    text-align: left;
+  }
 }/*# sourceMappingURL=index.css.map */

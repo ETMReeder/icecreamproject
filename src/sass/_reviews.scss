@@ -9,7 +9,12 @@ body {
     font-family: "DM Sans";
     font-weight: 500; 
 
-    .reviews{
+    p {
+        margin: 0 auto;
+        line-height: 1.5em;
+    }
+
+    .reviews {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -58,6 +63,7 @@ body {
             position: relative;
 
             .reviews__testimonial-description{
+                margin: 0;
                 text-align: center;
                 bottom: 39px;
                 top: 47px;
@@ -65,21 +71,32 @@ body {
                 right: 109px;
                 line-height: 29.76px;
                 position: absolute;
+                text-decoration: underline $underlineColor;
+                text-underline-offset: 8px;
+                
+                
 
+        
             }
 
 
 
             .reviews__testimonial-description::before {
                 content: "❞";
-                left: -18px;
+                left: -29px;
                 width: 54px;
+                bottom: -6px;
                 height: 40px;
                 position: absolute;
                 color: rgba(225, 225, 225, 1);
                 font-size: 100px;
             
             }
+
+            
+
+      
+
 
 
         }
@@ -95,9 +112,14 @@ body {
 
     }
 
-    .icon {
-        margin-top: 32px;
+    .reviews__icon {
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
+
 
 
     .slick-dots li {
@@ -105,17 +127,13 @@ body {
         display: inline-block;
         width: 20px;
         height: 20px;
-        margin: 0 5px;
-        padding: 0;
+   
         cursor: pointer;
     }
     
     .slick-dots li button {
         font-size: 0;
-        line-height: 0;
-        width: 20px;
-        height: 20px;
-        padding: 5px;
+
         cursor: pointer;
         border: 0;
         outline: none;
@@ -124,20 +142,38 @@ body {
 
     }
     
-    .slick-dots li button:before {
+    .slick-dots li button::after {
         content: "";
-        font-size: 22px;
+       
         line-height: 20px;
         position: absolute;
-        top: 32px;
-        left: 0;
+        
         width: 12px;
         height: 12px;
-        text-align: center;
+    
         border-radius: 100%;
         background-color: #D9D9D9;
     }
 
 
    
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        .reviews {
+            max-width: 748px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .reviews__home-slider {
+            width: 80%;
+        }
+
+        .reviews__testimonial-description {
+            overflow: hidden;
+            text-align: left;
+        }
+    }
 }
