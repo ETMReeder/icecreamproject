@@ -1,7 +1,7 @@
 
-    <section class="reviews">
-        <div class="reviews__home-slider">
-            <div class="reviews__slide">
+    <section class="reviews__section">
+        <div class="reviews__slider-container">
+            <div class="reviews__slider-post">
                 <img class="reviews__slide-image" src="./images/testimonials1.png" width="85" height="auto">
                     <div class="reviews__testimonial-container">
                         <p class="reviews__testimonial-description">
@@ -14,7 +14,7 @@
                     </p>
                 </div>
             </div>
-            <div class="reviews__slide">
+            <div class="reviews__slider-post">
                 <img src="./images/testimonials4.png">
                     <div class="reviews__testimonial-container">
                         <p class="reviews__testimonial-description">
@@ -27,7 +27,7 @@
                     </p>
                 </div>
             </div>
-            <div class="reviews__slide">
+            <div class="reviews__slider-post">
                 <img src="./images/testimonials3.png">
                     <div class="reviews__testimonial-container">
                         <p class="reviews__testimonial-description">
@@ -41,11 +41,7 @@
                 </div>
             </div>
         </div>
-        <div class="reviews__icon">
-            <svg class="icon icon-Vector-6-1" width="12" height="10.84">
-                <use href="./images/icons.svg#icon-Vector-6-1"></use>
-            </svg>
-        </div>
+       
     </section>
 
     
@@ -60,12 +56,12 @@
     `<script type="text/javascript">
 
         $(document).ready(function(){
-         $('.reviews__home-slider').slick({
-            arrow: true,
+         $('.reviews__slider-container').slick({
+            arrows: false,
             autoplay: true,
             autoplaySpeed: 2000,
             slidesToShow: 1,
-            slidesToScroll: 1,
+            slidesToScroll: 3,
             infinite: true,
             dots: true,
             dotsClass: 'slick-dots',
